@@ -1,0 +1,35 @@
+:root {
+    --blueMaya: #73c2fb;
+    --headerHeight: 100px;
+    --footerHeight: 30px;
+  }
+
+* {
+    margin-block-start: 0;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+header{
+    background-color: var(--blueMaya);
+    margin: 0;
+    height: var(--headerHeight);
+    width: 100vw;
+    text-align: center;
+    font-size: xx-large;
+    line-height: var(--headerHeight);
+}
+
+footer{
+    background-color: var(--blueMaya);
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    height: var(--footerHeight);
+    width: 100vw;
+    text-align: center;
+    font-size: large;
+    line-height: var(--footerHeight);
+    color: aliceblue;
+    
+}

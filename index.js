@@ -9,7 +9,7 @@ var timerRunning = false;
 
 inputTxt.addEventListener("keypress", start, false);
 //inputTxt.addEventListener("keyup", spellCheck, false);
-//resetBtn.addEventListener("click", reset, false);
+resetBtn.addEventListener("click", reset, false);
 
 
 
@@ -41,4 +41,14 @@ function leadingZero(time) {
         time = "0" + time;
     }
     return time;
+}
+
+// Reset everything:
+function reset() {
+    clearInterval(interval);
+    interval = null;
+    timer = [0,0,0,0];
+    timerRunning = false;
+    inputTxt.value = "";
+    timerTxt.innerHTML = "00:00:00";
 }

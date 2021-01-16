@@ -1,15 +1,20 @@
 :root {
     --blueMaya: #73c2fb;
+    --beige: #F4F4DC;
     --headerHeight: 100px;
     --footerHeight: 30px;
+    --bodyHeight: calc(100vh - (var(--footerHeight) + var(--headerHeight)));
   }
 
 * {
     margin-block-start: 0;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding: 0;
+    margin: 0;
 }
+
 header{
     background-color: var(--blueMaya);
     margin: 0;
@@ -30,6 +35,41 @@ footer{
     text-align: center;
     font-size: large;
     line-height: var(--footerHeight);
-    color: aliceblue;
-    
+    color: aliceblue; 
+}
+
+body{
+    background-color: var(--beige);
+}
+
+.center{
+    margin: auto;
+    width: 50%;
+    border: 1px solid green;
+    height: var(--bodyHeight);
+}
+
+#textInput{
+    display: block;
+    margin: auto;
+    width: 90%;
+    height: 200px;
+    font-size: larger;
+    text-indent: 2px;
+
+}
+
+#sample{
+    display: block;
+    margin: auto;
+    /* height: 1.5rem; */
+    width: 90%;
+    border-radius: 5px;
+    background-color: aliceblue;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-indent: 4px;
+    line-height: 1.5rem;
+    font-size: larger;
+    padding: 5px;
 }

@@ -46,7 +46,7 @@ body{
 .center{
     margin: auto;
     width: 50%;
-    border: 1px solid green;
+    /* border: 1px solid green; */
     height: var(--bodyHeight);
 }
 
@@ -69,8 +69,8 @@ body{
     width: 90%;
     border-radius: 5px;
     background-color: aliceblue;
-    margin-top: 10px;
-    margin-bottom: 5px;
+    margin-top: 30px;
+    margin-bottom: 10px;
     text-indent: 1px;
     line-height: 1.5rem;
     font-size: larger;
@@ -85,10 +85,16 @@ body{
 
 #resetBtn{
     height: 40px;
-    width: 80px;
+    width: 90px;
     margin: auto;
     font-size: large;
+    cursor: pointer;
+    background-color: var(--blueMaya);
+    border-radius: 5px;
 }
+#resetBtn:hover {
+    background-color: #fe4a49;
+  }
 
 #timer{
     font-size: xx-large;

@@ -68,8 +68,25 @@ body{
     background-color: aliceblue;
     margin-top: 10px;
     margin-bottom: 5px;
-    text-indent: 4px;
+    text-indent: 1px;
     line-height: 1.5rem;
     font-size: larger;
     padding: 5px;
+}
+
+.reset{
+    display: flex;
+    padding: 20px;
+    
+}
+
+#resetBtn{
+    height: 40px;
+    width: 80px;
+    margin: auto;
+}
+
+#timer{
+    font-size: xx-large;
+    margin: auto;
 }

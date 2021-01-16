@@ -1,6 +1,7 @@
 :root {
     --blueMaya: #73c2fb;
     --beige: #F4F4DC;
+    --grey: #777777;
     --headerHeight: 100px;
     --footerHeight: 30px;
     --bodyHeight: calc(100vh - (var(--footerHeight) + var(--headerHeight)));
@@ -56,7 +57,8 @@ body{
     height: 200px;
     font-size: larger;
     text-indent: 2px;
-
+    border: 5px solid var(--grey);
+    border-radius: 5px;
 }
 
 #sample{
